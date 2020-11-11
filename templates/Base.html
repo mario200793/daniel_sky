@@ -1,0 +1,43 @@
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <title>Carga de archivos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<BODY >
+
+<header id="main-header">
+    <!-- <a id="logo-header" href="">
+        <span class="site-name"><img src="{{ url_for('static', filename='img/kuhmy_logo.png') }}"  width="40" height="60"></span>
+    </a> -->
+    <a id="logo-header" href="{{ url_for('ini') }}">
+        <span class="site-name">Carga tu archivo</span>
+
+    </a> <!-- / #logo-header -->
+
+
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('ini') }}">Bienvenida</a></li>
+
+            {% block cabecera %}
+
+            {% endblock %}
+        </ul>
+    </nav><!-- / nav -->
+
+</header><!-- / #main-header -->
+
+{% block content %}
+{% endblock %}
+
+
+</BODY>
+<footer id="main-footer">
+
+</footer> <!-- / #main-footer -->
+</HTML>
